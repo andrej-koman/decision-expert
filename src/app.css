@@ -1,31 +1,28 @@
-/*
+
 @font-face {
-  font-family: 'FiraCode';
-  src: local('FiraCode Medium'), local('FiraCode-Medium'),
-  url('./public/FiraCode-Medium.woff2') format('woff2'),
-  url('./public/FiraCode-Medium.woff') format('woff');
+  font-family: 'JetBrainsMono';
+  src: local('JetBrainsMono Medium'), local('JetBrainsMono-Medium'),
+  url('./public/JetBrainsMono-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'FiraCode';
-  src: local('FiraCode Light'), local('FiraCode-Light'),
-  url('./public/FiraCode-Light.woff2') format('woff2'),
-  url('./public/FiraCode-Light.woff') format('woff');
+  font-family: 'JetBrainsMono';
+  src: local('JetBrainsMono Light'), local('JetBrainsMono-Light'),
+  url('./public/JetBrainsMono-Light.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'FiraCode';
-  src: local('FiraCode Bold'), local('FiraCode-Bold'),
-  url('./public/FiraCode-Bold.woff2') format('woff2'),
-  url('./public/FiraCode-Bold.woff') format('woff');
+  font-family: 'JetBrainsMono';
+  src: local('JetBrainsMono Bold'), local('JetBrainsMono-Bold'),
+  url('./public/JetBrainsMono-Bold.woff2') format('woff2');
   font-weight: 700;
-} */
+} 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500;700&family=Poppins&display=swap');
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'JetBrainsMono', Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 500;
 

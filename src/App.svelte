@@ -10,12 +10,13 @@
   const handleClick = () => {
     console.log("Im here");
   }
+
+  document.addEventListener('contextmenu', event => event.preventDefault());
   
 </script>
 
 <main>
   <div class="treeview-container">
-
     <TreeView tree={tree} onClick={handleClick} />
   </div>
 </main>
