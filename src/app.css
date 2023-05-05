@@ -1,4 +1,4 @@
-/* "./public/ */
+/*
 @font-face {
   font-family: 'FiraCode';
   src: local('FiraCode Medium'), local('FiraCode-Medium'),
@@ -21,12 +21,13 @@
   url('./public/FiraCode-Bold.woff2') format('woff2'),
   url('./public/FiraCode-Bold.woff') format('woff');
   font-weight: 700;
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500;700&family=Poppins&display=swap');
 
 :root {
-  font-family: 'FiraCode';
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
   background-color: #242424;
@@ -41,10 +42,18 @@
   --primary-color-light: #5885af;
   --primary-color-dark: #274472;
 
-  --text-color: #c3e0e5;
+  --text-color: black;
 
   color: var(--text-color);
   background-color: var(--primary-color-dark);
+  font-weight: bold;
+  caret-color: transparent;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
 }
 
 a {

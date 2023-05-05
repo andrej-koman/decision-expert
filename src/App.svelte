@@ -1,38 +1,35 @@
 <script lang="ts">
   import TreeView from "./components/ui/TreeView.svelte";
+  import TreeAdd from "./components/ui/TreeAdd.svelte";
   import type { Tree } from "./types";
-  let tree: Tree;
+  import { onMount } from "svelte";
+  let tree: Tree = {
+	label: "root"
+  };
 
-  tree = {
-		label: "USA",
-		children: [
-			{
-			  label: "Florida",
-			  children: [
-					{ label: "Jacksonville" },
-					{ label: "Orlando" },
-					{ label: "Miami" },
-			  ]
-		  },
-			{
-			  label: "California",
-			  children: [
-					{ label: "San Francisco" },
-					{ label: "Los Angeles" },
-					{ label: "Sacramento" },
-			  ]
-		  }
-		]
-	}
-  const handleClick = (e: Event) => {
-    console.log("click handler", e);
+  const handleClick = () => {
+    console.log("Im here");
   }
-
+  
 </script>
 
 <main>
-  <TreeView tree={tree} onClick={handleClick} />
+  <div class="treeview-container">
+
+    <TreeView tree={tree} onClick={handleClick} />
+  </div>
 </main>
 
 <style>
+
+  .treeview-container {
+    background-color: var(--primary-color-light);
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+	/* Add Box Shadow*/
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	padding-left: 10px;
+	padding-right: 0px;
+  }
 </style>
